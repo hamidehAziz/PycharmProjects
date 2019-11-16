@@ -1,15 +1,8 @@
 
 
-def my_function(str1, str2):
-    print(str1)
-    print(str2)
+def print_people(*people):
+    for person in people:
+        print("this person is ", person)
 
 
-my_function("hello", "hello again")
-
-
-def print_something(age, name="unknown"):
-    print("my name is:", name, "and my age is:", age)
-
-
-print_something(39)
+print_people("Dan", "Nick", "Jack", "Smile")
