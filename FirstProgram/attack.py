@@ -13,6 +13,8 @@ while playerhp > 0:
 
     print("Enemy strike for", damage, "points of damage. Current HP is", playerhp)
 
-    if playerhp == 30:
-        print("Go to the nearest hospital")
-        break
+    if playerhp > 30:
+        continue
+
+    print("Go to the nearest hospital")
+    break
