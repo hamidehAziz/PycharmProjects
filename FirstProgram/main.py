@@ -1,10 +1,19 @@
+import re
+
+print("My magical Calculator")
+print("Type 'quit' to exit")
+previous = 0
+run = True
 
 
-def do_math(n1, n2):
-    return n1 + n2
+def performMath():
+    global run
+    equation = input("Enter equation:")
+    if equation == "quit":
+        run = False
+    else:
+        print("You Typed:", equation)
 
 
-m1 = do_math(2, 5)
-m2 = do_math(11, 13)
-
-print("first is", m1, "second is", m2)
+while run:
+    performMath()
