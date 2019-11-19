@@ -18,7 +18,7 @@ def performMath():
     if equation == "quit":
         run = False
     else:
-        equation = re.sub('[a-zA-z.,:()" "]', '', equation)
+        equation = re.sub('[^0-9]', '', equation)
 
         if previous == 0:
             previous = eval(equation)
