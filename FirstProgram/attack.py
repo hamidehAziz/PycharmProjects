@@ -1,8 +1,11 @@
 import random
 
-playerhp = 250
-enemyatkl = 50
-emenyatkh = 90
+class Enemy:
+
+
+    playerhp = 250
+    enemyatkl = 50
+    emenyatkh = 90
 
 while playerhp > 0:
     damage = random.randrange(enemyatkl, emenyatkh)

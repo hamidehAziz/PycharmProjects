@@ -13,7 +13,7 @@ def performMath():
     if previous == 0:
         equation = input("Enter equation:")
     else:
-        equation = eval(str(previous))
+        equation = input(str(previous))
 
     if equation == "quit":
         run = False
