@@ -1,8 +1,20 @@
 import random
 
 class Enemy:
+    atkl = 30
+    atkh = 90
+
+    def getAtk(self):
+        print(self.atkl)
 
 
+enemy1 = Enemy()
+enemy1.getAtk()
+
+enemy2 = Enemy()
+enemy2.getAtk()
+
+'''
     playerhp = 250
     enemyatkl = 50
     emenyatkh = 90
@@ -21,3 +33,4 @@ while playerhp > 0:
 
     print("Go to the nearest hospital")
     break
+'''
